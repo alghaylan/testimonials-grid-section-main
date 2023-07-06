@@ -1,0 +1,99 @@
+@media (min-width:601px) {
+   body{
+      display: grid;
+      place-content: center;
+   }
+    main{
+ 
+       width: 1110px;
+       height: 575px;
+       display: grid;
+       gap: 20px;
+     
+       place-content: center;
+       grid-template-areas:
+           "dan dan jon kir"
+           "jea pat pat kir";
+        background-color: hsl(210, 46%, 95%);
+     }
+     section{
+
+      display: grid;
+      padding:10px  20px; 
+      border-radius: 5px;
+      box-shadow: -1px 2px 17px 6px hsl(0, 0%, 81%);;
+    }
+     .daniel{
+      background-color: hsl(263, 55%, 52%);
+      grid-area: dan;
+      width: 475px;
+      height: 250px;
+      background-image: url("images/bg-pattern-quotation.svg");
+      background-repeat: no-repeat;
+      background-position: top;
+  
+   }
+  .jeanette{
+      background-color: hsl(0, 0%, 100%);
+      grid-area:jea ;
+      height: 250px;
+      width: 230px;
+  }
+  .jonathan{
+      background-color:hsl(217, 19%, 35%)  ;
+      grid-area:jon ;
+      height: 250px;
+      width: 230px;
+  }
+  .kira{
+      background-color: hsl(0, 0%, 100%);
+      grid-area:kir ;
+      height: 100%;
+      width: 226px;
+  }
+  .patrick{
+      background-color: hsl(219, 29%, 14%) ;
+      width: 475px;
+      height: 250px;
+      grid-area:pat;
+  }  
+  }
+ 
+ 
+  
+
+ .daniel, .jonathan, .patrick{
+    color: hsl(0, 0%, 100%, .5)
+ }
+ .kira, .jeanette{
+    color: hsl(217, 19%, 35%, .5) ;
+ }
+ .kira h1, .jeanette h1, .kira h3, .jeanette h3{
+    color:   hsl(219, 29%, 14%);
+ }
+ .patrick h1, .patrick h3, .jonathan h1 ,
+ .jonathan h3, .daniel h1,  .daniel h3{
+    color:hsl(0, 0%, 100%) ;
+ }
+ p{
+    font-size: 12px;
+ }
+ h3 {
+    font-size: 17px;
+    line-height: 1.2rem;
+ }
+ .tilte{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .tilte img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+   
+ }
+ h1{
+    font-size: 18px;
+ }

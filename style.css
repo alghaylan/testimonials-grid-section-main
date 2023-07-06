@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+line-height: 1;
+}
+
+body{
+    display: block;
+    place-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color:  hsl(210, 46%, 95%);
+}
+.daniel{
+    background-color: hsl(263, 55%, 52%);
+    grid-area: dan;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+ }
+.daniel, .jonathan, .patrick{
+    color: hsl(0, 0%, 100%, .5)
+ }
+ .kira, .jeanette{
+    color: hsl(217, 19%, 35%, .5) ;
+ }
+ .kira h1, .jeanette h1, .kira h3, .jeanette h3{
+    color:   hsl(219, 29%, 14%);
+ }
+ .patrick h1, .patrick h3, .jonathan h1 ,
+ .jonathan h3, .daniel h1,  .daniel h3{
+    color:hsl(0, 0%, 100%) ;
+ }
+ p{
+    font-size: 12px;
+ }
+ h3 {
+    font-size: 17px;
+    line-height: 1.2rem;
+ }
+ .tilte{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .tilte img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+   
+ }
+ h1{
+    font-size: 18px;
+ }
+@media (max-width:600px) {
+    body{
+        display: grid;
+        place-content: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 50px auto;
+       
+    }
+    section{
+        padding: 20px;
+        border-radius: 5px;
+        width: 234px;
+   
+    }
+    .jeanette{
+        background-color: hsl(0, 0%, 100%);
+        grid-area:jea ;
+        width: 230px;
+    }
+    .jonathan{
+        background-color:hsl(217, 19%, 35%)  ;
+        grid-area:jon ;
+    }
+    .kira{
+        background-color: hsl(0, 0%, 100%);
+        grid-area:kir ;
+        
+    }
+    .patrick{
+        background-color: hsl(219, 29%, 14%) ;
+        grid-area:pat;
+    } 
+  .daniel{
+    width: 230px;
+  }
+    h1{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+    h3{
+        font-size: 15px;
+        margin: 10px auto;
+        line-height: 1;
+    }
+    p{font-size: 10px;}
+}
+  
+
